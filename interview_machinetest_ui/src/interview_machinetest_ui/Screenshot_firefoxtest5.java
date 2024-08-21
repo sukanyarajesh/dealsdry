@@ -12,15 +12,16 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-public class Screenshot_firefoxtest3 {
+public class Screenshot_firefoxtest5 {
 
 	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.gicko.driver","C:\\automation\\selenium\\geckodriver-v0.34.0-win64\\gickodriver.exe");
-        WebDriver driver=new FirefoxDriver();
-        driver.get("https://www.getcalley.com/see-a-demo/");
-        driver.manage().window().maximize();
-        Screenshot screen=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\screen shot\\image.7png"));
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://www.getcalley.com/calley-pro-features/");
+		driver.manage().window().maximize();
+		Screenshot screen=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+		ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\screen shot\\image9.png"));
+
 	}
 
 }

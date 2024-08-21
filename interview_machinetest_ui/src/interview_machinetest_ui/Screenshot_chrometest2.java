@@ -21,7 +21,7 @@ public class Screenshot_chrometest2 {
 		driver.get("https://www.getcalley.com/calley-lifetime-offer/");
 		driver.manage().window().maximize();
 		Screenshot screen=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-		ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\screen shot\\image.png"));
+		ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\screen shot\\image2.png"));
 		
 
 	}

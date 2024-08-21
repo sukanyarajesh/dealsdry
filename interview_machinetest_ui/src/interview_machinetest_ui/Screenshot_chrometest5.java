@@ -20,7 +20,7 @@ public class Screenshot_chrometest5 {
 		driver.get("https://www.getcalley.com/calley-pro-features/");
 		driver.manage().window().maximize();
 		Screenshot screen=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\firefoxe screenshot"));
+        ImageIO.write(screen.getImage(),"png",new File("C:\\automation\\firefoxe screenshot\\image5.png"));
 	}
 
 }
